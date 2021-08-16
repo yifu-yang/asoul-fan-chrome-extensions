@@ -1,0 +1,34 @@
+{
+    "name": "Asoul Extensions",
+    "description": "mark asoul fan",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+        //"default_popup": "index.html",
+        "default_icon": {
+            "16": "/images/index.png",
+            "32": "/images/index.png",
+            "48": "/images/index.png",
+            "128": "/images/index.png"
+          }
+    },
+    "commands": {
+        "_execute_action": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+F",
+                "mac": "MacCtrl+Shift+F"
+            },
+            "description": "Opens index.html"
+        }
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": ["storage", "activeTab", "scripting"],
+    "icons": {
+      "16": "/images/index.png",
+      "32": "/images/index.png",
+      "48": "/images/index.png",
+      "128": "/images/index.png"
+    }
+}
