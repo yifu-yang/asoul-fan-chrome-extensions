@@ -1,35 +1,20 @@
 {
-    "name": "Asoul Extensions",
-    "description": "mark asoul fan",
-    "version": "1.0",
-    "manifest_version": 3,
-    "action": {
-        //"default_popup": "index.html",
-        "default_icon": {
-            "16": "/images/index.png",
-            "32": "/images/index.png",
-            "48": "/images/index.png",
-            "128": "/images/index.png"
-          }
-    },
-    "commands": {
-        "_execute_action": {
-            "suggested_key": {
-                "default": "Ctrl+Shift+F",
-                "mac": "MacCtrl+Shift+F"
-            },
-            "description": "Opens index.html"
-        }
-    },
-    "background": {
-        "service_worker": "background.js"
-    },
-    "options_page": "options.html",
-    "permissions": ["storage", "activeTab", "scripting"],
-    "icons": {
-      "16": "/images/index.png",
-      "32": "/images/index.png",
-      "48": "/images/index.png",
-      "128": "/images/index.png"
-    }
+  "name": "Asoul Cnki",
+  "description": "小作文查重",
+  "version": "1.1",
+  "manifest_version": 3,
+  "permissions": [
+    "bookmarks"
+  ],
+  "action": {
+    "default_title": "枝网查重",
+    "default_icon": "images/index.png",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "/images/index.png",
+    "32": "/images/index.png",
+    "48": "/images/index.png",
+    "128": "/images/index.png"
+  }
 }
