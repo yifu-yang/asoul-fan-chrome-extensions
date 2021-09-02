@@ -25,7 +25,7 @@ $('#search').on("click", function () {
         $('#result').html("恭喜你，你的是原创小作文，请继续保持！</br>"); 
       }else{
         let result = '';
-        result += "重复率：" + data.data.rate + "</br>";
+        result += "重复率：" + data.data.rate*100 + "%</br>";
         let relatedText = data.data.related[0]
         let source = relatedText.reply_url;
         let ctime = new Date(parseInt(relatedText.reply.ctime) * 1000).toLocaleString().replace(/:\d{1,2}$/,' ');
