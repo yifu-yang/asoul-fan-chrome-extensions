@@ -1,4 +1,5 @@
 <html>
+
 <head>
   <link rel="stylesheet" href="third-party/jquery-ui.css">
   <link rel="stylesheet" href="third-party/jquery-ui.structure.css">
@@ -7,11 +8,29 @@
   <script src="third-party/jquery-1.12.4.js"></script>
   <script src="third-party/jquery-ui-1.12.1.js"></script>
   <meta charset="UTF-8">
+  <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+  <link rel="stylesheet" href="third-party/bootstrap.min.css" crossorigin="anonymous">
+
+  <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+  <link rel="stylesheet" href="third-party/bootstrap-theme.min.css" crossorigin="anonymous">
+
+  <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+  <script src="third-party/bootstrap.min.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 </head>
-<body style="width: 400px">
-  <div><b>知网查重</b></div>
-  <textarea id="asoultext" ></textarea>
-  <div><button id="search">查重</button></div>  
+
+<body style="width: 400px;height: 400px;">
+  <div style="margin: 5px 10px;"><h1>枝网查重</h1></div>
+  <div style="margin: 5px 10px;"><textarea class="form-control" style="resize: none;" row="5" id="asoultext"></textarea></div>
+  <div style="margin: 5px 10px;"><button class="btn btn-primary btn-block" id="search">查重</button></div>
+  <div style="margin: 5px 10px;"><h2>查重结果：</h2></div>
+  <p style="margin: 5px 10px;" id="result">
+
+  </p>
+  <p style="margin: 5px 10px;" id="foot">
+    感谢使用枝网Chrome插件版！
+  </p>
   <script src="popup.js"></script>
 </body>
+
 </html>
